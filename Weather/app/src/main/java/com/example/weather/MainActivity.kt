@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() {
     public fun getWeather(view: View) {
         try {
             var cityName:String = URLEncoder.encode(inputEditText.text.toString(), "UTF-8")
-            background("https://api.openweathermap.org/data/2.5/weather?q=$cityName&APPID=88335b0bd3118a0d58afb4649488e1f9")
+            background("https://api.openweathermap.org/data/2.5/weather?q=$cityName&APPID={YOUR API HERE}")
             weatherButton.isEnabled = false
             // To push down keyboard
             var mgr:InputMethodManager = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
